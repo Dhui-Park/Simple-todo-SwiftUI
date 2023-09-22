@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct TodoEntity: Identifiable {
+    var refId: String
+    var todo: String
+    var isDone: Bool = false
+    var id: UUID = UUID()
+}
